@@ -4,8 +4,17 @@ def add(a, b):
 def sub(a, b):
     return a - b
 
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    if b == 0:
+        return "error"
+    else:
+        return a / b
+
 def calcul():
-    print("1. add, 2.sub")
+    print("1. add, 2.sub 3.mul 4.div")
     c = input("choice: ")
     num1 = float(input("first number: "))
     num2 = float(input("second number: "))
@@ -13,6 +22,10 @@ def calcul():
         print(f"{add(num1, num2)}")
     elif c == '2':
         print(f"{sub(num1, num2)}")
+    elif c == '3':
+        print(f"{mul(num1, num2)}")
+    elif c =='4':
+        print(f"{div(num1, num2)}")
     else :
         print("Invalid input")
         
