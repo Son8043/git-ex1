@@ -9,7 +9,7 @@ def mul(a, b):
 
 def div(a, b):
     if b == 0:
-        return "error"
+        return "Error! Division by zero."
     else:
         return a / b
 
